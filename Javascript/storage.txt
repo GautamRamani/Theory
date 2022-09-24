@@ -1,0 +1,81 @@
+*******************************************************Storage******************************************************************************
+The solution is to store data on the client, read, update, and delete it using JavaScript via:
+
+1)Static storage
+2)LocalStorage
+3)SessionStorage
+4)IndexedDB
+5)WebSQL
+6)Cookies
+7)Cache API
+
+
+1. Static Storage
+This is the most basic way to store data using JavaScript. All we do is create a variable to hold the data. For example, we could create an array of todos such as
+const todos = ['play piano', 'write some code', 'swim'];
+We run the code inside the window object with DOMContentLoaded to ensure the todos are available to be shown when the page loads.
+window.addEventListener('DOMContentLoaded', () =>{
+        //show todos
+    todos.forEach( todo => {
+        let li = document.createElement('li');
+        li.textContent =  todo;
+        todosUl.appendChild(li);
+        //delete todos
+        li.addEventListener('dblclick', () => {
+            todosUl.removeChild(li);
+        })
+    })
+
+    const addTodos = e => {
+    e.preventDefault();
+
+    let li = document.createElement('li');
+    li.textContent =  input.value;
+    todos.push(input.value);
+    todosUl.appendChild(li);
+    input.value = '';
+}
+saveBtn.addEventListener('click', addTodos);
+})
+We loop through the todos, create a li element and show each todo on the page. We can add new todos to the array using the addTodos function.
+
+2. LocalStorage
+JavaScript allows us to store data in the browser using local storage API. Here, you can use LocalStorage and SessionStorage. The objects let us store data (in key/value pairs) and update it from the browser's storage. To view the data, open your browser. Right-click. Click Inspect => Application => Storage.
+
+Both ways have the same structure. The main difference is that LocalStorage lets us store data as long as we want. SessionStorage, by contrast, loses the data when we close the current window.
+
+To store data use two parameters as shown.:-
+
+open browser->Inspect->Console
+To test the code, clear the console (ctrl + L) and paste the below code with.
+
+localStorage.setItem('store_name', 'data_name'); 
+localStorage.setItem('name', 'Ahmed');
+
+localStorage.getItem('store_name');
+
+localStorage.getItem('name'); //Ahmed
+
+localStorage // all stores
+
+
+You can delete the storage object
+localStorage.removeItem('store_name');
+
+//e.g
+localStorage.removeItem('name');
+Or clear all storage objects using
+localStorage.clear();
+
+3. IndexedDB
+With IndexedDB, we can store various data types in many forms. It is a free database in the browser. The storage is not limited to strings as with localStorage.
+
+Since it stores data asynchronously, we can use promises to interact with the database. We would need to download a library such as idb by Jake Archibald to use the promise API. In this simple demo, we shall use the IndexedDB API, which uses events instead of promises.
+
+IndexedDB works like a NoSQL database, such as MongoDB.
+
+We create a database name. Add object stores. Object stores are like tables in MySQL or models in MongoDB.
+
+The structure of the stores comes from the index. In MongoDB, we would refer to them as schema.
+
+The database (object) has a method called transaction that enables us to perform CRUD in the IndexedDB. In the process, we use a cursor to loop through records in the object store.
