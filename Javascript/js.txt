@@ -827,3 +827,22 @@ diffrence between git and bitbuket?
 
 diffrence between git and github?
 same as above...
+
+What is Exexcution Stack ?
+The call stack follows the Last In, First Out (LIFO) principle. The last function that was pushed onto the stack is the first to be popped off and executed.
+function firstFunction() {
+    console.log("Inside firstFunction");
+    secondFunction();
+  }
+  
+  function secondFunction() {
+    console.log("Inside secondFunction");
+  }
+  
+  firstFunction();
+
+  What is Hosting in js?
+--try to geeting result before initialization
+ex:- console.log(x)
+        let x=10;
+
