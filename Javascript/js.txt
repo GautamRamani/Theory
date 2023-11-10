@@ -846,3 +846,66 @@ function firstFunction() {
 ex:- console.log(x)
         let x=10;
 
+What is the use of this keyword?
+-The javascript this keyword refers to the object it belongs to
+-this refer to the global object 
+-In regular function this refer to the global object
+
+console.log(typeof this); object, {} 
+
+What is higher order function?
+A higher-order function is a function that takes one or more functions as arguments or returns a function as its result
+
+function b(){
+ return "hello"  
+}
+function a(arg){
+    return arg
+}
+console.log(a(b))
+
+what is clouser?
+-- It allows a function to access variables from its outer (enclosing) scope even after the outer function has finished execution. 
+function outerFn() {
+    let outerFunction = "i am the outer function";
+    function innerFn() {
+        console.log(outerFunction);
+    }
+    return innerFn;
+}
+let clouser = outerFn()
+clouser()
+
+What is call and apply?
+1. call Method:- 
+The call method is used to invoke a function with a specific this value and a list of arguments.
+function test(greeting) {
+    console.log(`${greeting} ${this.name}`);
+}
+let obj = {
+    name: "Gautam"
+}
+test.call(obj, "Hi,")
+
+2. apply Method:
+The apply method is similar to call, but it accepts an array-like object as the second argument, allowing you to pass an array of arguments to the function
+function test(language1, language2, language3) {
+    console.log(`${this.name} know about ${language1}, ${language2} and ${language3}`);
+}
+let greeting = {
+    name: "John"
+}
+test.apply(greeting, ["English", "Spanish", "Italian"])
+
+3.bind method 
+The bind method is used to create a new function that, when called, has its this keyword set to a specific value, and it allows you to explicitly specify arguments that will be permanently bound to the function.
+const person = {
+    name: "Alice",
+    greet: function() {
+      console.log(`Hello, ${this.name}!`);
+    }
+  };
+  const greetFunction = person.greet;
+  const boundGreet = greetFunction.bind(person);
+
+  boundGreet();
