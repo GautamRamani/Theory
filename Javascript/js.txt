@@ -486,6 +486,13 @@ promise1.then(
   }
 );
 
+*****************Object methods*************
+Object.assign()
+Object.hasOwnProperty()
+Object.create()
+Object.entries()
+Object.freeze(obj) etc...
+
 *********************************************Async & Await*************************************************
 
 async-Await:- An async function is a function declared with the async keyword, and the await keyword is permitted within it. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.+
@@ -909,3 +916,11 @@ const person = {
   const boundGreet = greetFunction.bind(person);
 
   boundGreet();
+
+  //implicit and explicit conversion
+  implicit conversion is automatically conversion
+  let a= "5" + 3
+  console.log(a)
+  explicit conversion is manual conversion
+  let a= "5"
+  console.log(Number(a))
