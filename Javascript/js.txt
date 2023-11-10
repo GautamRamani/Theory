@@ -51,6 +51,12 @@ JavaScript:-
                 ECMA-262, 10th edition, June 2019
                 ECMA-262, 11th edition, June 2020
                 ECMA-262, 12th edition, June 2021
+                ECMA-262, 13th edition, June 2022
+                ECMA-262, 14th edition, June 2023
+
+                The 14th edition of the ECMAScript standard, ECMAScript 2023, introduced several new methods on Array.
+                prototype and TypedArray.prototype, including toSorted, toReversed, with, findLast, and findLastIndex. Additionally,
+                the toSpliced method was added to Array.prototype.
 
     numbers:-
 
@@ -497,6 +503,7 @@ There are certain features or mechanisms which makes a Language Object-Oriented 
                 2)Classes
                 3)Encapsulation
                 4)Inheritance
+                5)abstarction
 
 1)Object:-
         An Object is an instance of a class. Objects are everywhere in JavaScript, almost every element is an Object whether it is a function, array, or string. 
@@ -561,6 +568,15 @@ There are certain features or mechanisms which makes a Language Object-Oriented 
         
         me.printIntroduction();
 
+        class Polygon {
+                constructor() {
+                        this.name = 'Gautam Ramani';
+                        }
+                }
+
+        const poly1 = new Polygon();
+
+        console.log(poly1.name);
 
 2) Classes– 
         Classes are blueprint of an Object. A class can have many Objects because class is a template while Object are instances of the class or the concrete implementation. 
@@ -669,4 +685,145 @@ There are certain features or mechanisms which makes a Language Object-Oriented 
         console.log(student1.toString());
 
 
-        sdbfsfb
+5. abstraction is often achieved through the use of modules and functions that hide the complexity of underlying processes. Let's consider a simple example where you create an abstraction for handling file operations. In this example, we'll create a module that abstracts away the details of reading and writing to a file:`;
+
+`In short abstraction is a way of hiding the implementation details and showing only the functionality to the users. In other words, it ignores the irrelevant details and shows only the required one.`;
+
+
+class Rectangle {
+  private len: number;
+  private width: number;
+
+  constructor(len: number, width: number) {
+    this.len = len;
+    this.width = width;
+  }
+
+  // Abstraction for calculating the area
+  calculateArea(): number {
+    return this.len * this.width;
+  }
+
+  // Abstraction for calculating the perimeter
+  calculatePerimeter(): number {
+    return 2 * (this.len + this.width);
+  }
+
+  // Getter for len
+  getlen(): number {
+    return this.len;
+  }
+
+  // Getter for width
+  getWidth(): number {
+    return this.width;
+  }
+}
+
+const myRectangle = new Rectangle(5, 10);
+
+// Using the abstraction to get the dimensions
+console.log("len:", myRectangle.getlen());
+console.log("Width:", myRectangle.getWidth());
+
+// Using the abstraction to calculate the area and perimeter
+console.log("Area:", myRectangle.calculateArea());
+console.log("Perimeter:", myRectangle.calculatePerimeter());
+
+//iq question
+what is MVC structure?, whay it's use?
+-Model Inside Model folder all schema files
+-View means showing all routes in one file 
+-Controller Inside Controller folder all business logic files
+-use Separation of Concerns,Modularity,Code Reusability,Scalability,Testability
+
+pillers of OOPs?
+-class, object, inheritance, encapsulation, pollimerphism
+
+type of inheritense?
+-single,multiple,hierarchical,multilevel,hybrid
+
+what is base64?
+-Original binary data: 01001000 01100101 01101100 01101100 01101111 (the ASCII representation of "Hello")
+Base64 encoded data: SGVsbG8
+
+what is diffrense between map and forEach?
+-map will return, for each not return any thing
+
+what is diffrense between for and forEach?
+-for is faster then foreach, normallly for arithmatic operation user for, for hadnling large data use forEach, for is loop when forEach is js function
+
+why use firebase?
+-Cloud Messaging (FCM),Authentication,Authorization,Machine Learning 
+
+what is authentication and authorization
+-authentication is the process of verifying who a user is, while authorization is the process of verifying what they have access to
+
+how to impliment multi-threding in node.js?
+-lib View
+
+what is node.js?
+-Node js is a Javascript runtime built on crome v8 Javascript engine.
+
+diffrense between error and exaption?
+-error : Syntax Errors, Runtime Errors
+-exaption :ex:  use try-catch due to this, "exception" is a specific mechanism used in programming to handle and recover from runtime errors in a controlled manner
+
+what is exaption?
+use try-catch due to this, "exception" is a specific mechanism used in programming to handle and recover from runtime errors in a controlled manner
+
+what is a eventloop?
+An event loop is a crucial concept in asynchronous programming that allows applications to execute non-blocking code and handle multiple concurrent operations efficiently.
+
+Event Queue:-The event loop manages a queue of events or tasks that need to be processed. Events can include user inputs, timer expirations, network responses, and other asynchronous operations
+Execution Stack:- The execution stack is where functions are executed one at a time. When a function is called, it gets added to the top of the stack, and when it completes, it is removed from the stack.
+Event Loop Process:- The event loop continuously checks the event queue for new events.
+        If the stack is empty, the event loop takes the first event from the queue and pushes it onto the stack.
+        The event's associated function is then executed.
+        If the function is synchronous and completes, it is removed from the stack.
+        If the function is asynchronous (e.g., involves I/O operations), it may be scheduled to run later, and the event loop moves on to the next event in the queue.
+Non-Blocking and Asynchronous:- The event loop allows for non-blocking, asynchronous code execution. While waiting for certain tasks (e.g., file I/O, network requests), the event loop can continue processing other events, making efficient use of resources.
+
+console.log("Start of the script");
+
+        ex:- setTimeout(function() {
+                console.log("Inside setTimeout callback");
+        }, 0);
+
+                console.log("End of the script");
+
+what is diffrense between hash and encription?
+- hashing is normally use for password hashing and encryption is used for encrypt the payload,
+- in hashing if we need to check password we require hased password and orginal password...in encription we need also secret key because data is encrypted via secret key 
+
+lifecycle of node.js?
+- when we run NodeJS script code run step by step, first main file execute, inside main file event loop initialized, some of the event will call line timer expirations, callback etc...after at last all callback run process will exit...
+
+parametes of JWT?
+-payload id,secret key, expiresIn(Optional)
+
+diffrense between POST and PUT?
+
+mongoose hooks?
+1. Pre Hooks:
+pre('save', callback): Executes the callback function before saving a document.
+pre('validate', callback): Executes the callback function before validating a document.
+pre('remove', callback): Executes the callback function before removing a document.
+2.Post Hooks:
+post('save', callback)
+post('validate', callback)
+post('remove', callback)
+3. Query Middleware
+userSchema.pre('find', function () {
+  // Custom logic before a find query
+  console.log('Executing find query');
+});
+
+types of version control?
+-git, bit bucket, zira...
+
+diffrence between git and bitbuket?
+-git is base or pure, bitbuket is GUI..both have same work..code commit,pull,merge branch...
+
+diffrence between git and github?
+same as above...
