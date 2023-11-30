@@ -1195,3 +1195,107 @@ app.set ('views', path.join (__dirname, 'views'))
 app.set ('view engine', 'ejs') 
 where path is the global object and __dirname holds current directory address. Views is the folder where our all web pages will be kept.
 
+*********************************************************IQ Question******************************************************
+
+1)What is node? why its use instead of other technologies
+-->Node js is a Javascript runtime built on crome v8 Javascript engine.
+-->provide runtime environment (means it will not compile the code it will execute the code ex: ts convert in js so its complie time+run time)
+-->light weight
+-->Single threaded 
+
+  We can understand Single thared by Libuv
+  Libuv:-
+    Libuv is a multi-platform C library that provides support for asynchronous I/O based on event loops. 
+    It was initially developed for Node.js to handle the event-driven architecture, 
+    but it has since been adopted by other projects due to its performance and efficiency
+
+Libuv's primary features include:
+
+Event loop
+Asynchronous file and file system operations
+Asynchronous TCP and UDP sockets TCP (Transmission Control Protocol) User Datagram Protocol
+Child processes -- exec--for cmd and fork for power shell "do a task via code indstead of cmd or power shell" through the fork we can create the instance of nodejs
+Thread pool
+Timers, signals, and polls
+By handling all these features, libuv enables Node.js to work as a single-threaded, non-blocking, and event-driven platform.
+
+2)senario:- if we have millions of data how can we handle
+-->way indexing,pagination,aggregation
+
+Q.2.1) Types of indexing in mongodb
+-->Single Field Index (normal routin we use) 
+  concept:- we give indxing on perticular field, so it may algorithem like key will retrive the data by binary shorting its also advantages
+  demerit:- Memory Usage,Limited Query Optimization,Index Maintenance During Bulk Operations
+
+-->Compound Index
+-->Multikey Index --nested indexing
+-->Geospatial Index
+-->Clustered Index
+-->Hashed Index
+-->Text Index
+
+Q.2.2)pagination
+-->pagination is a way to reduce the getting large amount data
+-->like we retrvie the data as per over requirement like retrieve 10 record after retrive next 10 records...so it does not take more load
+
+Q.2.3)aggregation
+-->it also take less time to retrive the record
+
+Q.3 Architecture of nodejs
+
+--> Bunch of requests-->event quese->event loop->if sync->blocking / if async->non blocking
+-->we have so many reqests first it will stores in event queues->after it will goes for event loop..event loop take event one by one from event queue
+  if the event may have sync it will store in blocking if the event is async so it will store in non blocking oprations, in non blocking operation
+
+            callStack
+            ------------
+            |          |Task-1 after pop,after 2,3,4,5
+            |          |
+            |          |
+            |          |
+            |__________|
+              |   |
+              |   |
+              |   |                         Microstack queue
+            -------------                    -------------| ex. Promise,callback
+            | |   |-----|------------------- |Task1,2,3   |     async function
+            | | event   |<------------------>|------------|
+            | | loop    |                     ______________
+            | |---------|-------------------->| Task 4 ,5  | ex. setTimeout,setInterval
+            ------------- <-------------------|____________|     setimmediate
+
+                                            Microstack queue
+
+  when all process done after ti will execute and this process may have in microsecond
+
+Q.4 set immidiate
+-->it will call immediately (have no delay)
+
+Q.5 database design
+-->
+
+Q.6 callback function first parameter
+-->error
+
+  ex:-function callbacks(err, data) {
+      if (err) {
+          console.log("an error occured");
+      } else {
+          console.log("data::", data);
+      }
+  }
+
+    function test(params1, params2, callbacks) {
+      let result = params1 + params2;
+      callbacks(null, result)
+    }
+
+    test(3, 4, callbacks)
+
+    Q.7 diffrence between .save() and .create() 
+    --> .create() is used to create the document only, 
+        where .save() check if document already exists it will updated else wil be created
+
+        diffrence between .findOneAndUpdate() and .update() 
+        --> .findOneAndUpdate() firstly check if document exists so it will be update else will create the document
+         where .update() is two update the document only
