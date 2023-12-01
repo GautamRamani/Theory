@@ -1292,10 +1292,17 @@ Q.6 callback function first parameter
 
     test(3, 4, callbacks)
 
-    Q.7 diffrence between .save() and .create() 
+Q.7 diffrence between .save() and .create() 
     --> .create() is used to create the document only, 
         where .save() check if document already exists it will updated else wil be created
 
         diffrence between .findOneAndUpdate() and .update() 
         --> .findOneAndUpdate() firstly check if document exists so it will be update else will create the document
          where .update() is two update the document only
+
+Q.8 What is Transactions in mongodb
+  -->Transactions are commonly used in the context of databases, where you might want to execute multiple database operations 
+  (like inserts, updates, or deletes) as a single transaction. 
+  If any part of the transaction fails, the entire transaction is rolled back, and the database is left in a consistent state.
+
+  
