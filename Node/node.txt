@@ -1305,4 +1305,17 @@ Q.8 What is Transactions in mongodb
   (like inserts, updates, or deletes) as a single transaction. 
   If any part of the transaction fails, the entire transaction is rolled back, and the database is left in a consistent state.
 
-  
+Q.9 What is primitive and non-primitive data (mutable and immutable)
+
+--> primitive data:- String, number, boolean, undefined, null , symbol
+-->non - primitive:- array, object, function, date, regExp, map, setmap, weakmap, weakset
+-->primitive data is immutable type..means value not be change
+-->non primitive means mutable...we can change the value
+
+Q.10 What is diffrence between Prommise.all , async await, simple Promise
+--> Promise.all is a method to execute multiple function in parallel but should not dependencies on each other function 
+--> when there is dependencies on one function to another function async await is a method use
+-->simple Promise is similar to async await but async await is simple clear style as well error handling,
+ when in promise we use promise handle with then catch so it not need to handle because we already use try catch block
+
+ 

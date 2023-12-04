@@ -826,14 +826,16 @@ userSchema.pre('find', function () {
   console.log('Executing find query');
 });
 
-types of version control?
--git, bit bucket, zira...
+Version control?
+1)git -->Versioning, Branching, Merging, History Tracking, Conflict Resolution
+2)GitDesktop -->, is a graphical user interface (GUI),  Repository Cloning, Branching and Merging, Committing Changes, Pushing and Pulling, Stashing
 
-diffrence between git and bitbuket?
--git is core or base or pure, bitbuket is GUI..both have same work..code commit,pull,merge branch...
+-source control
+3)github -->Repository Hosting, Pull Requests
+4)GitLab --> Repository Management, Branching and Merging, Merge Requests, Continuous Integration/Continuous Deployment (CI/CD), 
+5)Bitbucket -->Repository Management, Branching and Merging, Merge Requests, Continuous Integration/Continuous Deployment (CI/CD)
+6)Zira -->Repository Management, Branching and Merging, Merge Requests, Continuous Integration/Continuous Deployment (CI/CD)
 
-diffrence between git and github?
-same as above...
 
 What is Exexcution Stack ?
 The call stack follows the Last In, First Out (LIFO) principle. The last function that was pushed onto the stack is the first to be popped off and executed.
