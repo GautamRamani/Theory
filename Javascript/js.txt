@@ -740,7 +740,7 @@ console.log("Perimeter:", myRectangle.calculatePerimeter());
 //iq question
 what is MVC structure?, whay it's use?
 -Model Inside Model folder all schema files
--View means showing data to user we may use pug, mustache etc
+-View means showing data to user we may use pug, mustache or frontend angular,react etc... etc
 -Controller Inside Controller folder all business logic files
 -use Separation of Concerns,Modularity,Code Reusability,Scalability,Testability
 
