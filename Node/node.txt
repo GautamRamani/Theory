@@ -1318,4 +1318,9 @@ Q.10 What is diffrence between Prommise.all , async await, simple Promise
 -->simple Promise is similar to async await but async await is simple clear style as well error handling,
  when in promise we use promise handle with then catch so it not need to handle because we already use try catch block
 
- 
+ Q.11 What is dependencies injection?
+ -->Dependency injection is a software design pattern in which one or more dependencies (or services) are injected,
+  or passed by reference, into a dependent object.
+  merits:- provide loose coupling, easy unit testing, faster development
+  ex:- we use session and inside session we directly use connect-session-knex library...
+

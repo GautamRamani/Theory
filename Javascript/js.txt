@@ -740,9 +740,18 @@ console.log("Perimeter:", myRectangle.calculatePerimeter());
 //iq question
 what is MVC structure?, whay it's use?
 -Model Inside Model folder all schema files
--View means showing all routes in one file 
+-View means showing data to user we may use pug, mustache etc
 -Controller Inside Controller folder all business logic files
 -use Separation of Concerns,Modularity,Code Reusability,Scalability,Testability
+
+what are the strcures are available in nodejs
+--mvc 
+--mvvm (model view viewmodel)-- 
+        -The User class represents the data model on the client-side.
+        -The UserViewModel class acts as an intermediary between the model and the view. It manages the user data.
+        -The AppComponent serves as the view and uses Angular template syntax.
+--module 
+        means inside user folder user model,interface,contoller,aggrgation,validation
 
 pillers of OOPs?
 -class, object, inheritance, encapsulation, pollimerphism
