@@ -1324,3 +1324,29 @@ Q.10 What is diffrence between Prommise.all , async await, simple Promise
   merits:- provide loose coupling, easy unit testing, faster development
   ex:- we use session and inside session we directly use connect-session-knex library...
 
+Q.12 What is Buffer?
+  -->normal data are converting in binary format means machine language
+  -->use:- size will compress
+
+Q.13 encryption
+  -->when transmit the data we use encryption..for enhance sequirity
+
+Q.14 What are the service to provide the send  notification in  nodejs
+  -->Firebase Cloud Messaging (FCM) , OneSignal --For android and web
+  -->WebPush --For Web Push Notifications
+
+Q.15 What are the payment method in nodejs?
+  -->Razorpay, Paypal, Authorise.net, stripe...
+
+Q.16 What is npm in nodejs
+  --> NPM stands for Node Package Manager. 
+  It is the default package manager for Node.js, 
+  and it is used to manage and distribute packages (libraries or modules) for Node.js projects.
+
+Q.16 Common library for nodejs project routin?
+  -->express, cors, bodyparser, joi, http, https, morgan etc...
+
+Q.16 What is Lib in nodejs
+  -->some common functions are we put in this...
+    like req function, res function, payment gatway integration, mail sending function, Messaging function, mongosService, s3bucket,
+    csv file or excel file, pagination, validation, job cron
