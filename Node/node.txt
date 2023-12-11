@@ -1331,12 +1331,28 @@ Q.12 What is Buffer?
 Q.13 encryption
   -->when transmit the data we use encryption..for enhance sequirity
 
-Q.14 What are the service to provide the send  notification in  nodejs
-  -->Firebase Cloud Messaging (FCM) , OneSignal --For android and web
+Q.14, Q.15 
+  What are the service to provide the send otp in  nodejs
+  -->Twilio, Msg91, Firebase admin
+
+  What are the service to provide the upload media in  nodejs
+  -->Aws sdk library, Firebase Storage, Google cloud
+
+  What are the service to provide the mails send in  nodejs 
+  -->Smtp, Aws ses, Twilio
+
+  What are the service to provide the send  notification in  nodejs
+  -->Firebase Cloud Messaging (FCM) , 
+  -->OneSignal --For android and web
+  -->Aws sns (simple notification service)
+  -->Twilio
   -->WebPush --For Web Push Notifications
 
-Q.15 What are the payment method in nodejs?
+What are the payment method in nodejs?
   -->Razorpay, Paypal, Authorise.net, stripe...
+
+What are the ekyc method in nodejs?
+  -->zoop one
 
 Q.16 What is npm in nodejs
   --> NPM stands for Node Package Manager. 
