@@ -1366,3 +1366,12 @@ Q.16 What is Lib in nodejs
   -->some common functions are we put in this...
     like req function, res function, payment gatway integration, mail sending function, Messaging function, mongosService, s3bucket,
     csv file or excel file, pagination, validation, job cron
+
+Q.17 What is replica in database
+  -->replica is used full for backup of mongodb
+  -->if we set as replica so it will create new db and it will take backup evey time..
+     means if one entry is create it will autmatically take backup...
+
+    demerits:- it takes more size
+
+    other way:- take mongo dump for backup
