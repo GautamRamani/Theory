@@ -1408,3 +1408,14 @@ Q.17 What is replica in database
 
   -->aggregate middleware ex model.aggregate
   -->query middleware ex pre,post
+
+  Q.21 Max size of jwt payload at sign time
+    -->from personal opinion req.headers takes upto 8 kb..so ultimately it size is 8kb
+
+  Q.22 differences between accessToken and refreshtoken
+    --> accessToken   expires time normally 1hr 24 hr 
+    --> refreshToken  expires times normally 7 days
+
+    -->ex. in banking or government website we add only use accesstoken and take expires time 5 to 10 min..after session will expires so go throw Login
+    -->ex. in some application we use refreshToken..firstly at login time both token will create..after when opne the app..it will check accessToken
+      if they expires so take refreshToken...and when refreshToken expires so that time login will required to update both token will update... 
