@@ -1227,12 +1227,11 @@ Q.2.1) Types of indexing in mongodb
   concept:- we give indxing on perticular field, so it may algorithem like key will retrive the data by binary shorting its also advantages
   demerit:- Memory Usage,Limited Query Optimization,Index Maintenance During Bulk Operations
 
--->Compound Index
+-->Compound Index --more then two filed
 -->Multikey Index --nested indexing
--->Geospatial Index
--->Clustered Index
--->Hashed Index
--->Text Index
+-->Geospatial Index --based on lat long location
+-->Hashed Index -- based on encryption, it will decrypt and do sorting
+-->Text Index --based on string value
 
 Q.2.2)pagination
 -->pagination is a way to reduce the getting large amount data
@@ -1375,3 +1374,37 @@ Q.17 What is replica in database
     demerits:- it takes more size
 
     other way:- take mongo dump for backup
+
+  Q.18 What are the middleware in nodejs
+    -->a)Built in middleware
+        ex. express.json, express.urlencoded, express.static
+    -->b)Logger Middleware
+        ex. app.use(morgan('tiny'))
+    -->b)Helmet 
+        ex. app.use(helmet()) security perspose
+    -->c)Session 
+        ex. app.use(session({ secret: 'your-secret-key'}))
+    -->d)Authentication Middleware
+    -->e)Error Handling Middleware
+    -->f)CORS Middleware
+    -->g)Rate Limiting Middleware 
+        const rateLimit = require('express-rate-limit');
+      const limiter = rateLimit({
+          windowMs: 15 * 60 * 1000, // 15 minutes
+          max: 100, // limit each IP to 100 requests per window
+          });
+        app.use(limiter);
+
+  Q.19 What is lexical environment?
+  -->similar to clauser
+  -->Lexical scope is a programming concept where the scope of a variable is determined by its location in the source code, 
+      and variables are resolved based on their nesting within functions and blocks.
+
+  Q.20 Mongoose middleware
+  -->document middleware, model middleware, aggregate middleware, and query middleware
+  -->document middleware --to specific document
+  -->model middleware --to entire model
+      ex--init,validate,save,remove,findOneAndUpdate,findOneAndDelete
+
+  -->aggregate middleware ex model.aggregate
+  -->query middleware ex pre,post
