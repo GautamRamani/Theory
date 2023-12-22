@@ -1437,3 +1437,6 @@ Q.17 What is replica in database
       here we use load balancing..we can use load balancing on perticular api, or all api etc..when trafic has been raise so 
       through the load balancing instaances will create and after it will delete when trafic is reduce...it may raise cpu uses so that time
       load balancing is applied
+
+  Q.26 what is cherry-pick in git
+    --> when we want to add specific commit code in specific environment we use cherry-pick, test-dev last commit add into test-stag branch
