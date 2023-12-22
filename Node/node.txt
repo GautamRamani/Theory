@@ -1430,3 +1430,10 @@ Q.17 What is replica in database
   Q.24 diffrence between ssh and https
  --> SSH: Uses key pairs for authentication. Users generate a public-private key pair, and the public key is stored on the server while the private key is kept secure on the user's machine. This method provides a high level of security. listen the server locally
         HTTPS: Typically relies on username/password combinations for authentication, although it can also use SSL/TLS certificates for added security.
+
+  Q.25 scenario:- if application is running in proper manner with limited user, suddenly trafic has been seen in application, thousand os user enter and
+                  api called is more then expectation so how handle the node
+  --> as we know nodejs support the libuv library handle multiple concurrency, but we need to handle api calling..or trafic..
+      here we use load balancing..we can use load balancing on perticular api, or all api etc..when trafic has been raise so 
+      through the load balancing instaances will create and after it will delete when trafic is reduce...it may raise cpu uses so that time
+      load balancing is applied
