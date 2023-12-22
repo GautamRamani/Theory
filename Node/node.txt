@@ -1422,3 +1422,7 @@ Q.17 What is replica in database
 
   Q.23 what is $facet in aggregation
     -->$facet stage is used to process multiple aggregation pipelines within a single query
+
+  Q.24 add repository without git clone
+    -->as we known we clone repo by command:- git clone repo link
+      another way is... git init-->git pull repo link 
