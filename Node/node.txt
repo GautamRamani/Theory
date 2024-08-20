@@ -1195,6 +1195,39 @@ app.set ('views', path.join (__dirname, 'views'))
 app.set ('view engine', 'ejs') 
 where path is the global object and __dirname holds current directory address. Views is the folder where our all web pages will be kept.
 
+************************************************Direcotory Permission****************************************************
+
+Read (r): Allows listing the contents of the directory.
+Write (w): Allows creating, deleting, and renaming files within the directory.
+Execute (x): Allows entering or accessing the directory and executing scripts or programs within it.
+
+Default Permissions
+Typical Default umask: 022
+This umask means that directories are created with 755 permissions (read and execute for everyone, write for the owner only).
+
+When you create a new directory, the permissions might look like drwxr-xr-x, where:
+
+d indicates it is a directory.
+rwx (owner permissions): read, write, execute.
+r-x (group permissions): read, execute.
+r-x (others permissions): read, execute.
+
+Setting Permissions with Commands
+1. Using chmod Command
+
+You use the chmod command to change directory permissions. The command syntax is:
+chmod [options] mode directory_name
+
+Mode can be specified in numeric or symbolic notation.
+
+Numeric Notation:
+
+777 – Full permissions for everyone.
+755 – Owner has full permissions; others have read and execute permissions.
+700 – Only the owner has full permissions.
+
+like:- chmod 777 html (html directory have full access)
+
 *********************************************************IQ Question******************************************************
 
 1)What is node? why its use instead of other technologies
