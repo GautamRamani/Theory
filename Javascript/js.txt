@@ -59,7 +59,7 @@ JavaScript:-
                 prototype and TypedArray.prototype, including toSorted, toReversed, with, findLast, and findLastIndex. Additionally,
                 the toSpliced method was added to Array.prototype.
 
-                The 15th edition of the ECMAScript standard, ECMAScript 2024, introduced several new methods on Array.
+                The 15th edition of the ECMAScript standard, ECMAScript 2024, introduced several new methods
                 groupBy, Promise.withResolvers(), Temporal.
 
     numbers:-
