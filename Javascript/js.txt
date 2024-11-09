@@ -53,10 +53,14 @@ JavaScript:-
                 ECMA-262, 12th edition, June 2021
                 ECMA-262, 13th edition, June 2022
                 ECMA-262, 14th edition, June 2023
+                ECMA-262, 15th edition, June 2024
 
                 The 14th edition of the ECMAScript standard, ECMAScript 2023, introduced several new methods on Array.
                 prototype and TypedArray.prototype, including toSorted, toReversed, with, findLast, and findLastIndex. Additionally,
                 the toSpliced method was added to Array.prototype.
+
+                The 15th edition of the ECMAScript standard, ECMAScript 2024, introduced several new methods on Array.
+                groupBy, Promise.withResolvers(), Temporal.
 
     numbers:-
 
