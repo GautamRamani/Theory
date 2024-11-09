@@ -87,18 +87,26 @@ JavaScript:-
         var data  = 100      //initialization
 
         Data Types:-
-                1)number        
-                  a)Binary
-                  b)Octal              
-                  c)Decimal
-                  d)Hexa Decimal
-                  e)double
-                2)String
-                3)boolean
-                4)Undefined
-                5)Null
-                6)bigint
-                7)Symbol
+               1. Primitive Data Types:
+              String
+              Number
+              BigInt
+              Boolean
+              Undefined
+              Null
+              Symbol
+
+              2. Reference (Non-Primitive) Data Types:
+              
+              Object
+              Array
+              Function
+              Date
+              RegExp
+              Map
+              Set
+              WeakMap: A collection of key-value pairs where keys are weakly referenced.
+              WeakSet: A collection of unique values where objects are weakly referenced.
 
 ***********************************************Null nan undefined zero******************************************************
 
