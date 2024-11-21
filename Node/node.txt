@@ -1328,9 +1328,8 @@ Q.7 diffrence between .save() and .create()
     --> .create() is used to create the document only, 
         where .save() check if document already exists it will updated else wil be created
 
-        diffrence between .findOneAndUpdate() and .update() 
-        --> .findOneAndUpdate() firstly check if document exists so it will be update else will create the document
-         where .update() is two update the document only
+        .findOneAndUpdate() will find a document and update it if it exists. If it doesn't exist and you specify { upsert: true }, it will create a new document.
+        .update() (or .updateOne() / .updateMany()) will only update existing documents matching the filter criteria and will not create new documents unless { upsert: true } is used.
 
 Q.8 What is Transactions in mongodb
   -->Transactions are commonly used in the context of databases, where you might want to execute multiple database operations 
@@ -1372,6 +1371,9 @@ Q.14, Q.15
 
   What are the service to provide the mails send in  nodejs 
   -->Smtp, Aws ses, Twilio
+
+  What are the service to provide the whatsapp message send in  nodejs
+  -->wbbox, waapi
 
   What are the service to provide the send  notification in  nodejs
   -->Firebase Cloud Messaging (FCM) , 
