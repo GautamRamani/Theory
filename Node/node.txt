@@ -1396,10 +1396,9 @@ Q.16 What is npm in nodejs
 Q.16 Common library for nodejs project routin?
   -->express, cors, bodyparser, joi, http, https, morgan etc...
 
-Q.16 What is Lib in nodejs
-  -->some common functions are we put in this...
-    like req function, res function, payment gatway integration, mail sending function, Messaging function, mongosService, s3bucket,
-    csv file or excel file, pagination, validation, job cron
+Q.16 What is Lib and utils in nodejs
+  -->in lib we may add db connection file, auth file etc...
+     in utils we may add common function that we use many of places...
 
 Q.17 What is replica in database
   -->replica is used full for backup of mongodb
