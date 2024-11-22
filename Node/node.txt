@@ -1228,6 +1228,13 @@ Numeric Notation:
 
 like:- chmod 777 html (html directory have full access)
 
+**************************************************Docker***************************************************************
+
+Docker : Docker is a company that provides a container
+        -suppose we purchase server from aws or digital ocean, and install nginx or appache, and we setup the server and do installation of all things that required
+        -now same way want to create new server for diffrent application and want to required above same step to follow but may we forgot the command...
+        -so docker create container or create docker image...it just file where we make all command related to what we want implement in server...
+
 *********************************************************IQ Question******************************************************
 
 1)What is node? why its use instead of other technologies
