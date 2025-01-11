@@ -715,6 +715,8 @@ Web Application is front end application(client side)which is calling web API to
 
 eg: To check the account balance in your mobile banking app, you are able to see your account details in front end. But all the calculations of interest /balance is happening in the back end.
 
+TypeORM : - TypeORM is a library to interface sqLite, mysql, postgres and mongodb with nodeJs..where as mongoose only connect node with mongodb
+
 **********************************************Mongoose*****************************************************
 
 Mongoose:-
