@@ -187,6 +187,20 @@ fs.unlink("demo.txt", (err) => {                                                
   }
 });
 
+********************************************Understanding purpose**********************************************
+const fs = require("fs");
+
+try {
+    fs.writeFileSync('sync','write file sync')
+} catch (error) {
+    console.log(error);
+}
+
+fs.writeFile('async','write file async',(err)=>{
+    if(err) console.log(err);
+    else console.log('write file async');
+})
+
 
 *****************************************************JSON*******************************************************
 
