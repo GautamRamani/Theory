@@ -842,7 +842,12 @@ PATCH Method:-
 DELETE Method:-
     The DELETE request simply looks like this, for deleting a specific resource.
 
+Diffrence between Put and Patch Method
+suppose we have name, email and age
+case 1)put method with await User.replaceOne({ _id: req.params.id }, req.body) query..here if we pass name then it will update and remove email and age 
+case 2)patch method with await User.findByIdAndUpdate(req.params.id, req.body, {new: true,runValidators: true}) query .. here if we pass name then it will update other thing remain same
 
+if we use findByIdAndUpdate in put and patch method then there is not diffrence between put and patch method
 
 Folder Structure Restapi(IQ):-
 
