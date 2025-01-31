@@ -31,6 +31,11 @@ http server:-
 
             require:- Node.js follows the CommonJS module system, and the builtin require function is the easiest way to include modules that exist in separate files. The basic functionality of require is that it reads a JavaScript file, executes the file, and then proceeds to return the exports object. An example module: So if you run var example = require ...
 
+   *************diffrence between require and import************
+	require() is always synchronous, meaning it will block the rest of the code until the module is fully loaded.
+	import() (ESM) is asynchronous (when used dynamically), meaning it can be used to load modules in the background while allowing the rest of the code to run.
+                 Lazy loading modules, You can load a module only when a certain condition is met (e.g., when a user clicks a button or scrolls to a specific part of the page).
+
   Node.js provide set of built-in modules which you can use without any further installation. like assert, crypto, fs, http, https, path, url etc...
 
 *******************************************************File System*****************************************************
