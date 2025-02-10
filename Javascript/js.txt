@@ -15,6 +15,12 @@ JavaScript:-
         ===    -->check equality and datatype
 
 
+***********************Fetch Optimization Required***************************
+
+console.time("Total Execution Time");
+console.timeEnd("Total Execution Time");
+
+some time api may have lot's of query and javascript code it difficult to fetch which specific line take much more load and above will help to fetch specific line how much take load
 
 ***********************************************Variable******************************************************
         variale:-
