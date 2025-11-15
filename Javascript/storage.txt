@@ -79,3 +79,9 @@ We create a database name. Add object stores. Object stores are like tables in M
 The structure of the stores comes from the index. In MongoDB, we would refer to them as schema.
 
 The database (object) has a method called transaction that enables us to perform CRUD in the IndexedDB. In the process, we use a cursor to loop through records in the object store.
+
+-------------Diffrence between Local Storage, Cookies and Session ---------------------
+
+Local Storage : Frontend storage, Lives in the browser, Stays forever (until manually cleared)
+Cookies : Stored in browser, Can be controlled by frontend + backend, Automatically sent to server with requests, purpose :authentication            tokens, user tracking, preferences, small size data about 4kb
+Session : Stored on the server, Browser only stores a session ID cookie, Used for login and secure user data, large objects
