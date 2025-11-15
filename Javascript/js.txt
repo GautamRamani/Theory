@@ -60,6 +60,7 @@ some time api may have lot's of query and javascript code it difficult to fetch 
                 ECMA-262, 13th edition, June 2022
                 ECMA-262, 14th edition, June 2023
                 ECMA-262, 15th edition, June 2024
+                ECMA-262, 16th edition, June 2025
 
                 The 14th edition of the ECMAScript standard, ECMAScript 2023, introduced several new methods on Array.
                 prototype and TypedArray.prototype, including toSorted, toReversed, with, findLast, and findLastIndex. Additionally,
@@ -67,6 +68,9 @@ some time api may have lot's of query and javascript code it difficult to fetch 
 
                 The 15th edition of the ECMAScript standard, ECMAScript 2024, introduced several new methods
                 groupBy, Promise.withResolvers(), Temporal.
+
+                The 16th eidtion of ECMAScript cover the Iterator Helpers -Iterator.prototype.map, filter, take, drop, flatMap, reduce,
+                etc..Set Method -union, intersection, difference, symmetricDifference, isSupersetOf, isDisjointFrom...Promise.try etc..
 
     numbers:-
 
