@@ -50,7 +50,7 @@ some time api may have lot's of query and javascript code it difficult to fetch 
                 backtick also known as template literal--(IQ)
                 backtick also used in paragraph
 
-                ECMA is uropian european organization that provide the rules and js follow this rules
+                ECMA is european organization that provide the rules and js follow this rules
 
                 ECMA-262, 6th edition, June 2015 (major changes in 2015)
                 ECMA-262, 7th edition, June 2016
