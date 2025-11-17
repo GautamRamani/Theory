@@ -510,6 +510,12 @@ promise1.then(
   }
 );
 
+Method	          Success Rule	      Failure Rule	      When It Finishes
+all	              All must succeed	 One fails → reject	  After all finish
+allSettled	      Doesn’t care	     Doesn’t reject	      After all finish
+race	            First resolved	   First rejected	      When first finishes
+any	              First resolved	   All fail → reject	  When first success appears
+
 *****************Object methods*************
 Object.assign()
 Object.hasOwnProperty()
